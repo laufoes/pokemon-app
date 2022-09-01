@@ -15,12 +15,46 @@ body {
     font-weight: 400;
 }
 
-#navegacao {
+#navbar {
     display: flex;
+    justify-content: space-between;
     height: 70px;
     margin-bottom: 2rem;
     color: white;
     background-color: var(--cor-principal);
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    padding: 0.35rem;
+    border-radius: 16px;
+    color: var(--cor-principal);
+    font-weight: 600;
+}
+
+.navbar_logo {
+    max-height: 100%;
+    margin-left: 1rem;
+    width: auto;
+}
+
+.navbar_logo img {
+    width: auto;
+    height: 90%;
+}
+
+.navbar_options {
+    align-self: center;
+}
+
+.navbar_options li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.navbar_options li:last-child {
+    margin-right: 1rem;
 }
 
 #cards {
@@ -42,7 +76,7 @@ body {
     height: 8rem;
     border-radius: 16px;
     border: 1px solid var(--cor-secundaria);
-    box-shadow: 8px 8px 0 var(--cor-secundaria);
+    box-shadow: 4px 4px 0px var(--cor-secundaria);
     background-color: white;
 }
 
@@ -51,7 +85,7 @@ body {
     transition: ease-in-out 350ms;
     color: var(--cor-destaque);
     border: 1px solid var(--cor-destaque);
-    box-shadow: 8px 8px 0 var(--cor-destaque);
+    box-shadow: 4px 4px 0 var(--cor-destaque);
 }
 
 b {
